@@ -11,7 +11,7 @@ tf_anova <- aov(result ~ as.factor(unit) + as.factor(run), C3) # model definitio
 sum <- summary(tf_anova) # the summary function provides MSs and F-statistics
 sum
 sqrt(sum[[1]]['Residuals','Mean Sq']) #swb, residual or within bottle SD
-sqrt((sum[[1]]['as.factor(unit)','Mean Sq']-sum[[1]]['Residuals','Mean Sq'])/3) #swb, between bottle SD
+sqrt((sum[[1]]['as.factor(unit)','Mean Sq']-sum[[1]]['Residuals','Mean Sq'])/3) #sbb, between bottle SD
 
 # Beyond two-factor ANOVA
 # Linear mixed effect models (LMEs) or hierarchical models by frequentists
