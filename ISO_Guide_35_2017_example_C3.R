@@ -14,5 +14,5 @@ sqrt(sum[[1]]['Residuals','Mean Sq']) #swb, residual or within bottle SD
 sqrt((sum[[1]]['as.factor(unit)','Mean Sq']-sum[[1]]['Residuals','Mean Sq'])/3) #sbb, between bottle SD
 
 # Beyond two-factor ANOVA
-# Linear mixed effect models (LMEs) or hierarchical models by frequentists
+# Linear mixed effect models (LMEs) or hierarchical models
 lmer(result ~ (1|unit) + (1|run), C3)
